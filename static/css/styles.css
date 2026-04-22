@@ -1,0 +1,66 @@
+/* Estilos específicos para el navbar - Mayor contraste */
+.app-nav {
+  backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  padding: 0.5rem 0.5rem;
+  margin-right: 6rem;
+}
+
+.app-nav a {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease;
+}
+
+.app-nav a:hover {
+  color: #f38ba8 !important;
+  text-shadow: 0 0 8px rgba(243, 139, 168, 0.5);
+}
+
+.app-nav ul {
+  padding: 0rem;
+}
+
+/* Alternativa más sutil (solo sombra) */
+.app-nav li a {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+/* Para móviles */
+@media (max-width: 768px) {
+  .app-nav {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(12px);
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    right: auto !important;
+    width: auto !important;
+    max-width: 90vw;
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    margin-top: 0 !important;
+    border-radius: 0 0 12px 12px;
+  }
+
+  .app-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Ajuste para que no se superponga con el logo/menú */
+  .app-nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.1rem 0.1rem;
+    gap: 1rem;
+  }
+
+  .app-nav li {
+    display: inline-block;
+    margin: 0;
+  }
+}
