@@ -1,9 +1,0 @@
-include:
-  - docs
-  - static
-  - assets
-  - .nojekyll
-
-exclude: []
-
-markdown: plaintext
